@@ -1,0 +1,26 @@
+plugins {
+    alias(libs.plugins.android.library)
+}
+
+android {
+    namespace 'cn.ac.lz233.tarnhelm.extension.api'
+    compileSdk 35
+
+    defaultConfig {
+        minSdk 27
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+}
+
+dependencies {
+    implementation 'org.jetbrains.annotations:15.0'
+}
