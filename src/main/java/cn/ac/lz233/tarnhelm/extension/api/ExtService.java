@@ -3,6 +3,8 @@ package cn.ac.lz233.tarnhelm.extension.api;
 import android.content.Context;
 import android.view.View;
 
+import org.jetbrains.annotations.Nullable;
+
 public abstract class ExtService {
 
     private ExtService() {}
@@ -43,5 +45,6 @@ public abstract class ExtService {
      * This method should build the configuration panel of the extension by returning a view which may contains widgets that are wrapped in a Layout.
      *
      */
+    @Nullable
     public abstract View onRequestConfigurationPanel(Context context);
 }
